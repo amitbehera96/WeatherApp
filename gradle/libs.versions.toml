@@ -28,6 +28,11 @@ javapoet = "1.13.0"
 # Room
 room = "2.6.1"
 
+retrofit = "2.11.0"
+okhttp = "4.12.0"
+kotlinSerializationJson = "1.7.3"
+retrofitKotlinSerialization = "1.0.0"
+
 # Google Play Services and Coroutines
 playServicesLocation = "21.3.0"
 coroutines = "1.9.0"
@@ -79,6 +84,12 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-kotlinx-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinSerialization" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerializationJson" }
+
 # Google Play Services
 play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
 
@@ -97,5 +108,6 @@ androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-co
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
