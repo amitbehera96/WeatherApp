@@ -15,6 +15,7 @@ composeBom = "2024.09.00"
 # Dependency Injection
 hilt = "2.51.1"
 hiltNavigation = "1.2.0"
+hiltWork = "1.2.0"
 
 # Navigation
 navigationCompose = "2.7.7"
@@ -25,9 +26,14 @@ coil = "2.5.0"
 # Code Generation
 javapoet = "1.13.0"
 
-# Room
+# Database and Storage
 room = "2.6.1"
+datastore = "1.1.1"
 
+# Background Work
+work = "2.9.1"
+
+# Networking
 retrofit = "2.11.0"
 okhttp = "4.12.0"
 kotlinSerializationJson = "1.7.3"
@@ -84,6 +90,15 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 
+# DataStore
+datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+
+# WorkManager and Hilt Worker
+work-runtime-ktx = { module = "androidx.work:work-runtime-ktx", version.ref = "work" }
+hilt-work = { module = "androidx.hilt:hilt-work", version.ref = "hiltWork" }
+hilt-work-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltWork" }
+
+# Networking
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-kotlinx-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinSerialization" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }

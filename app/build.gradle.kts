@@ -91,6 +91,12 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
     ksp(libs.hilt.compiler)
 
+    implementation(libs.datastore.preferences)
+
+    // WorkManager with Hilt
+    implementation(libs.work.runtime.ktx)
+    implementation(libs.hilt.work)
+
     // Navigation
     implementation(libs.navigation.compose)
 
